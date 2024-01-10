@@ -321,120 +321,134 @@ body {
   font-size: 20px;
 }
 
-@media (max-width: 1145px) {
+@media (max-width: 525px) {
+  .principal {
+    width: 80vh;
+  }
   .principal::before {
-    width: 205vh;
+    width: 80vh;
   }
-  .tipos {
-    width: 205vh;
-  }
-  .tipos::before {
-    width: 205vh;
-  }
-  .gallery .ruleta {
-    width: 76.5rem;
-  }
-  .gallery .galeria .fil {
-    position: absolute;
-    left: 73.5rem;
-  }
-  .final::before {
-    width: 205vh;
-  }
-  .final .hecho {
-    position: relative;
-    width: 90%;
-    left: 7.5rem;
-    display: flex;
+  .principal .barra {
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: stretch;
   }
-}
-@media (max-width: 1024px) {
-  .final .hecho {
-    position: relative;
-    width: 100%;
-    left: 7.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: stretch;
-  }
-}
-@media (max-width: 768px) {
-  .final .hecho {
-    position: relative;
-    width: 132%;
-    left: 7.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: stretch;
-  }
-}
-@media (max-width: 425px) {
-  .final .hecho {
-    position: relative;
-    width: 66rem;
-    left: 7.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: stretch;
-  }
-}
-@media (max-width: 375px) {
-  .final .hecho {
-    position: relative;
-    width: 64rem;
-    left: 7.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: stretch;
-  }
-}
-@media (max-width: 320px) {
-  .principal::before {
-    width: 194vh;
+  .principal .barra .barra-menu {
+    background-color: rgba(43, 78, 74, 0.4941176471);
+    width: 26.5rem;
+    border-radius: 15px 15px 0 0;
   }
   .principal .barra .barra-title {
-    width: 42rem;
+    background-color: rgba(43, 78, 74, 0.4941176471);
+    width: 26.5rem;
+    border-radius: 0 0 15px 15px;
+  }
+  .principal .barra .barra-title .title {
+    font-size: 30px;
+  }
+  .principal .barra .barra-title .title .big {
+    font-size: 45px;
   }
   .principal .present {
-    width: 194vh;
+    grid-template-columns: 1fr;
+  }
+  .principal .present .image-big {
+    width: 290px;
+    height: 290px;
+    left: 0;
+    top: 10rem;
+  }
+  .principal .present .image-big::before {
+    height: 260px;
+    width: 260px;
+    left: 0;
+  }
+  .principal .present .introduction {
+    padding: 1rem 3rem;
+    position: absolute;
+    top: 30rem;
+  }
+  .principal .present .introduction p {
+    font-size: 1rem;
   }
   .tipos {
-    width: 190vh;
+    width: 80%;
   }
   .tipos::before {
-    width: 191vh;
+    width: 80%;
+  }
+  .tipos .contain {
+    width: 70vh;
+    margin: 10rem 1.5rem;
+  }
+  .tipos .contain .boxInfo {
+    margin: 20px 0;
+  }
+  .tipos .contain .boxInfo .fi {
+    font-size: 30px;
+  }
+  .tipos .contain .boxInfo .subtitle {
+    font-size: 20px;
+  }
+  .tipos .contain .boxInfo .image {
+    width: 85px;
+    height: 85px;
+  }
+  .tipos .contain .boxInfo .image img {
+    width: 85px;
+    height: 85px;
+    top: 0;
+  }
+  .tipos .contain .info .paragraphSub {
+    font-size: 16px;
+  }
+  .tipos .contain .info .paragraph {
+    font-size: 13px;
+  }
+  .gallery {
+    top: 35rem;
   }
   .gallery .ruleta {
-    width: 71rem;
+    width: 28rem;
+    margin: 1rem;
+    left: 0;
+  }
+  .gallery .galeria .fi-sr-triangle {
+    font-size: 10px;
+    top: 5.5rem;
+    left: 3.8rem;
   }
   .gallery .galeria .fil {
     position: absolute;
-    left: 68rem;
+    left: 24.5rem;
+    top: 6.8rem;
   }
   .gallery .galeria .imagenes {
-    width: 55.5rem;
+    width: 22rem;
+    height: 20rem;
+    left: 3.2rem;
+    top: 5.3rem;
   }
   .gallery .galeria .imagenes .carrusel .img {
-    width: 145px;
-    height: 260px;
+    width: 56px;
+    height: 85px;
+    margin: 6px;
+    border: 2px solid #aa9f79;
+  }
+  .final {
+    width: 80vh;
+    top: 30rem;
   }
   .final::before {
-    width: 190vh;
+    width: 80vh;
   }
   .final .hecho {
     position: relative;
-    width: 66rem;
-    left: 5rem;
+    width: 26rem;
+    left: 0;
+    top: 23rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: stretch;
+    height: 7rem;
   }
 }/*# sourceMappingURL=styles.css.map */
